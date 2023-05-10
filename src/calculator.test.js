@@ -28,4 +28,16 @@ describe('Calculator', () => {
     test('should return multiply of two negative and positive numbers', () => {
     expect(calculator.multiply(-5, 2)).toBe(-10);
 });
+test('should return multiply of two zero and positive numbers', () => {
+    expect(calculator.multiply(5, 0)).toBe(0);
+});
+test('should return division of two positive numbers', () => {
+    expect(calculator.division(5, 5)).toBe(1);
+});
+test('should return division of positive numbers and zero', () => {
+    expect(calculator.division(0, 5)).toBe(0);
+});
+test('should return division of negative numbers', () => {
+    expect(calculator.division(-5, -5)).toBe(1);
+});
 });
