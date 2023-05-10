@@ -9,7 +9,7 @@ class Calculator {
     division = (a,b) => {
         return a/b;
     };
-    nultiply = (a,b) => {
+    multiply = (a,b) => {
         return a*b;
     };
 }
